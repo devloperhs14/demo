@@ -29,9 +29,6 @@ At root level - 4 folder and 10 files , but here only necessary ones are covered
 1. `favicon.ico`: icon
 2. `global.css`: contains the global styles for app
 3. `layout.tsx`: ui that can be shared across diff pages
-4. `page.tsx`: unique ui that present at root / home page at project start. **Modify to see the ui change**
-
-
-
+4. `page.tsx`: unique ui that present at root / home page at project start. **Modify to see the ui change**. It replaces the `{children}` prop in **layout.tsx** to form complete ui!
 
 
