@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Readme.md
 
-## Getting Started
+# Next JS Learnings
 
-First, run the development server:
+## Lec 1 : Setup Next JS Project
+- In terminal run `npx create-next-app@latest`
+- Input project name - Only hyphen allowed as special char
+- Keep rest of options to default - For use src folder - Ensure yes (organised)
+- One done, in terminal run `npm run dev` and open browser at localhost
+- Editing page from **src/app/page.tsx**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Lec 2 : Project Structure
+At root level - 4 folder and 10 files , but here only necessary ones are covered:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Files**
+1. `package.json`: Project dependecies (next, react, react-dom) and scripts (dev, build, start, lint)
+2. `next.config.js`: For next js
+3. `tsconfig.ts`: For typescript
+4. `eslintrc`: For eslint
+5. `tailwind.config` & `postcss.config.js`: For tailwindcss
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Folders**
+1. `.next`: dev or build script autogenerates and serves
+2. `node_modules`: all dependecies - generated at dev command
+3. `public`: static storage folder
+4. `src`: Main folder to work with
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Src files:**
+1. `favicon.ico`: icon
+2. `global.css`: contains the global styles for app
+3. `layout.tsx`: ui that can be shared across diff pages
+4. `page.tsx`: unique ui that present at root / home page at project start. **Modify to see the ui change**
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
